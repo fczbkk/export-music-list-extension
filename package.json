@@ -1,0 +1,17 @@
+{
+  "title": "Export music list",
+  "name": "export-music-list",
+  "version": "0.0.1",
+  "description": "Export music list",
+  "author": "Riki Fridrich <riki@fczbkk.com> (https://github.com/fczbkk)",
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-coffeelint": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-contrib-coffee": "*",
+    "grunt-bump": "*",
+    "load-grunt-tasks": "*",
+    "grunt-contrib-compress": "*",
+    "grunt-responsive-images": "*"
+  }
+}

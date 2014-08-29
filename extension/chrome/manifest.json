@@ -1,0 +1,32 @@
+{
+  "name": "Export music list",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Export music list",
+  "icons": {
+    "16": "images/icon-16.png",
+    "48": "images/icon-48.png",
+    "128": "images/icon-128.png"
+  },
+  "permissions": [
+    "*://play.google.com/music/*",
+    "storage"
+  ],
+  "background": {
+    "persistent": false,
+    "scripts": ["js/background.js"]
+  },
+  "options_page": "html/report.html",
+  "page_action": {
+    "default_icon": {
+      "19": "images/icon-19.png",
+      "38": "images/icon-38.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://play.google.com/music/*"],
+      "js": ["js/google-music/page_action.js"]
+    }
+  ]
+}
