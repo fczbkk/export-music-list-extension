@@ -30,10 +30,6 @@
 
   chrome.pageAction.onClicked.addListener(function(callback) {
     var url;
-    chrome.tabs.create({
-      url: 'html/report.html'
-    });
-    return;
     alert("I'm going to export the list of songs in your library now.\n\n I will open a new tab. There will be some strange stuff happening. Content scrolling down and what not. Don't worry and be patient. I'll let you know when it's done.");
     url = 'https://play.google.com/music/listen#/all';
     return chrome.tabs.create({

@@ -28,10 +28,6 @@ chrome.runtime.onMessage.addListener (request, sender, callback = ->) ->
 # harvesting songs list.
 chrome.pageAction.onClicked.addListener (callback) ->
 
-  # DEBUG
-  chrome.tabs.create {url: 'html/report.html'}
-  return
-
   # Warn the user that some strange shit is going to happen.
   alert "
     I'm going to export the list of songs in your library now.\n\n
